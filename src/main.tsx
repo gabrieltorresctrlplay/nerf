@@ -11,10 +11,11 @@ import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import App from './App';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
     children: [
       {
         index: true,
@@ -39,7 +40,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: "/nerf/"
+});
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
