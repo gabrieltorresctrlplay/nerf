@@ -8,6 +8,7 @@ export default defineConfig({
   base: '/nerf/',
   build: {
     outDir: 'docs',
+    emptyOutDir: true,
   },
   plugins: [react(), tailwindcss()],
   resolve: {
